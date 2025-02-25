@@ -1,9 +1,9 @@
 # Makefile for WeightedPandas
 
-.PHONY: install install-dev test lint format clean docs docs-serve build publish
+.PHONY: install install-dev test lint format format-check clean docs docs-serve build publish
 
 # Default Python command
-PYTHON := python
+PYTHON := python3
 
 # Installation
 install:
@@ -24,6 +24,10 @@ lint:
 format:
 	$(PYTHON) -m black weightedpandas/
 	$(PYTHON) -m isort weightedpandas/
+
+format-check:
+	$(PYTHON) -m black --check weightedpandas/
+	$(PYTHON) -m isort --check weightedpandas/
 
 # Documentation
 docs:
@@ -67,6 +71,7 @@ help:
 	@echo "  test         - Run tests"
 	@echo "  lint         - Run linting checks"
 	@echo "  format       - Format code with black and isort"
+	@echo "  format-check - Check code format without modifying files"
 	@echo "  docs         - Build documentation"
 	@echo "  docs-serve   - Serve documentation locally"
 	@echo "  build        - Build distribution packages"
