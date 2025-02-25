@@ -1,10 +1,10 @@
-# Usage Guide
+## Usage Guide
 
-## Creating Weighted Objects
+### Creating Weighted Objects
 
 WeightedPandas provides two main classes: `WeightedSeries` and `WeightedDataFrame`, which extend pandas' Series and DataFrame classes to support weighted operations.
 
-### Creating a WeightedSeries
+#### Creating a WeightedSeries
 
 ```python
 from weightedpandas import WeightedSeries
@@ -18,7 +18,7 @@ ws = WeightedSeries(data, weights=weights)
 ws_uniform = WeightedSeries(data)  # All weights default to 1.0
 ```
 
-### Creating a WeightedDataFrame
+#### Creating a WeightedDataFrame
 
 ```python
 from weightedpandas import WeightedDataFrame
@@ -35,7 +35,7 @@ wdf = WeightedDataFrame(df_data, weights=weights)
 wdf_uniform = WeightedDataFrame(df_data)  # All weights default to 1.0
 ```
 
-### Helper Functions
+#### Helper Functions
 
 For convenience, you can use the following helper functions:
 
@@ -47,9 +47,9 @@ ws = weighted_series(data, weights=weights)
 wdf = weighted_dataframe(df_data, weights=weights)
 ```
 
-## Calculating Weighted Statistics
+### Calculating Weighted Statistics
 
-### Basic Statistics
+#### Basic Statistics
 
 ```python
 # Weighted sum
@@ -63,7 +63,7 @@ ws.var()
 ws.std()
 ```
 
-### Quantiles and Percentiles
+#### Quantiles and Percentiles
 
 ```python
 # Weighted median (equivalent to 50th percentile)
@@ -74,7 +74,7 @@ ws.quantile(0.25)  # 25th percentile
 ws.quantile([0.25, 0.5, 0.75])  # Multiple quantiles
 ```
 
-### Correlation and Covariance
+#### Correlation and Covariance
 
 ```python
 # Weighted correlation between columns
@@ -84,7 +84,7 @@ wdf.corr()
 wdf.cov()
 ```
 
-## Operations and Weight Preservation
+### Operations and Weight Preservation
 
 An important feature of WeightedPandas is that weights are preserved through operations:
 
@@ -99,7 +99,7 @@ ws2 = ws * 2 + 1
 print(ws2.weights)  # Same as original weights: [5, 4, 3, 2, 1]
 ```
 
-## Working with Regular Pandas Objects
+### Working with Regular Pandas Objects
 
 WeightedPandas objects can interoperate with regular pandas objects:
 
@@ -117,7 +117,7 @@ ws = WeightedSeries([6, 7, 8, 9, 10], weights=[5, 4, 3, 2, 1])
 result = ws + s  # Result is a WeightedSeries with preserved weights
 ```
 
-## How Weights Are Applied
+### How Weights Are Applied
 
 In weighted calculations:
 

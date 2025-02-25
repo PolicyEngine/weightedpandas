@@ -1,8 +1,12 @@
 /* Custom CSS for WeightedPandas documentation */
 
 :root {
-  --pst-color-primary: #1e88e5;
-  --pst-color-secondary: #00897b;
+  --pst-color-primary: #2C6496;
+  --pst-color-secondary: #616161;
+}
+
+a.reference {
+  color: var(--pst-color-primary) !important;
 }
 
 .sidebar-logo {

@@ -1,8 +1,8 @@
-# API Reference
+## API Reference
 
 This page documents the complete API for WeightedPandas.
 
-## WeightedSeries
+### WeightedSeries
 
 ```{eval-rst}
 .. py:class:: weightedpandas.WeightedSeries(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False, weights=None)
@@ -25,7 +25,7 @@ This page documents the complete API for WeightedPandas.
    :type weights: array-like, optional
 ```
 
-### Properties
+#### Properties
 
 ```{eval-rst}
 .. py:attribute:: weightedpandas.WeightedSeries.weights
@@ -33,7 +33,7 @@ This page documents the complete API for WeightedPandas.
    The weights array used for weighted operations.
 ```
 
-### Statistical Methods
+#### Statistical Methods
 
 ```{eval-rst}
 .. py:method:: weightedpandas.WeightedSeries.sum(axis=None, skipna=True, level=None, numeric_only=None, min_count=0, **kwargs)
@@ -122,7 +122,7 @@ This page documents the complete API for WeightedPandas.
    :rtype: scalar or Series
 ```
 
-## WeightedDataFrame
+### WeightedDataFrame
 
 ```{eval-rst}
 .. py:class:: weightedpandas.WeightedDataFrame(data=None, index=None, columns=None, dtype=None, copy=False, weights=None)
@@ -143,7 +143,7 @@ This page documents the complete API for WeightedPandas.
    :type weights: array-like, optional
 ```
 
-### Properties
+#### Properties
 
 ```{eval-rst}
 .. py:attribute:: weightedpandas.WeightedDataFrame.weights
@@ -151,7 +151,7 @@ This page documents the complete API for WeightedPandas.
    The weights array used for weighted operations.
 ```
 
-### Statistical Methods
+#### Statistical Methods
 
 ```{eval-rst}
 .. py:method:: weightedpandas.WeightedDataFrame.sum(axis=0, skipna=True, level=None, numeric_only=None, min_count=0, **kwargs)
@@ -239,7 +239,7 @@ This page documents the complete API for WeightedPandas.
    :rtype: DataFrame
 ```
 
-## Helper Functions
+### Helper Functions
 
 ```{eval-rst}
 .. py:function:: weightedpandas.weighted_series(data=None, index=None, dtype=None, name=None, copy=False, weights=None)

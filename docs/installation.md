@@ -1,6 +1,6 @@
-# Installation
+## Installation
 
-## Requirements
+### Requirements
 
 WeightedPandas requires:
 
@@ -8,7 +8,7 @@ WeightedPandas requires:
 - pandas 1.4.0+
 - numpy 1.20.0+
 
-## Installing with pip
+### Installing with pip
 
 The simplest way to install WeightedPandas is using pip:
 
@@ -16,7 +16,7 @@ The simplest way to install WeightedPandas is using pip:
 pip install weightedpandas
 ```
 
-## Installing from source
+### Installing from source
 
 To install WeightedPandas from source:
 
@@ -26,7 +26,7 @@ cd weightedpandas
 pip install -e .
 ```
 
-## Verifying installation
+### Verifying installation
 
 To verify that WeightedPandas is installed correctly, run:
 

@@ -28,6 +28,7 @@ format:
 # Documentation
 docs:
 	cd docs && $(PYTHON) -m pip install -r requirements.txt
+	rm -rf docs/_build/
 	cd docs && $(PYTHON) -m jupyter book build .
 
 docs-serve:

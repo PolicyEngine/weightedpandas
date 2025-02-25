@@ -1,0 +1,30 @@
+name: PR Documentation
+
+on:
+  pull_request:
+    paths-ignore:
+      - 'weightedpandas/**'
+      - 'pyproject.toml'
+      - 'setup.py'
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .[dev]
+      
+      - name: Format check
+        run: make format-check
+      
+      - name: Build documentation
+        run: make docs

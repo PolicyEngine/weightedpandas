@@ -1,4 +1,4 @@
-# WeightedPandas
+## WeightedPandas
 
 WeightedPandas extends pandas Series and DataFrame classes to support weighted operations. It provides drop-in replacements for pandas objects that automatically handle weights in statistical operations.
 
@@ -8,7 +8,7 @@ WeightedPandas extends pandas Series and DataFrame classes to support weighted o
 :align: center
 ```
 
-## Features
+### Features
 
 - Weighted versions of common statistical operations:
   - `sum()`, `mean()`, `var()`, `std()`
@@ -18,7 +18,7 @@ WeightedPandas extends pandas Series and DataFrame classes to support weighted o
 - Familiar pandas interface
 - Supports both Series and DataFrame objects
 
-## Quick Example
+### Quick Example
 
 ```python
 import pandas as pd

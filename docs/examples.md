@@ -1,8 +1,8 @@
-# Examples
+## Examples
 
 This page contains various examples demonstrating how to use WeightedPandas for different applications.
 
-## Basic Usage
+### Basic Usage
 
 The following example demonstrates the basic usage of WeightedSeries and WeightedDataFrame:
 
@@ -38,7 +38,7 @@ print("Weighted correlation:")
 print(wdf.corr())
 ```
 
-## Survey Data Analysis
+### Survey Data Analysis
 
 Weighted statistics are commonly used in survey data analysis, where each respondent may represent a different number of people in the population:
 
@@ -68,7 +68,7 @@ income_satisfaction_corr = survey_df[['income', 'satisfaction']].corr().iloc[0, 
 print(f"Weighted correlation between income and satisfaction: {income_satisfaction_corr:.3f}")
 ```
 
-## Time Series Analysis with Exponential Weighting
+### Time Series Analysis with Exponential Weighting
 
 In time series analysis, more recent data points are often given higher weights:
 
@@ -97,7 +97,7 @@ print(f"Regular std: {time_series.std():.2f}")
 print(f"Exponentially weighted std: {weighted_ts.std():.2f}")
 ```
 
-## Handling Missing Data
+### Handling Missing Data
 
 WeightedPandas can handle missing data in weighted calculations:
 
@@ -121,7 +121,7 @@ print(f"Weighted sum (min_count=0): {ws.sum(min_count=0)}")
 print(f"Weighted sum (min_count=5): {ws.sum(min_count=5)}")  # Returns NaN as there are only 4 non-NA values
 ```
 
-## Advanced Example: Portfolio Analysis
+### Advanced Example: Portfolio Analysis
 
 This example demonstrates using WeightedPandas for financial portfolio analysis:
 
