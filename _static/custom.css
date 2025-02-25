@@ -1,0 +1,70 @@
+/* Custom CSS for WeightedPandas documentation */
+
+:root {
+  --pst-color-primary: #2C6496;
+  --pst-color-secondary: #616161;
+}
+
+a.reference {
+  color: var(--pst-color-primary) !important;
+}
+
+.sidebar-logo {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--pst-color-primary);
+}
+
+code {
+  color: var(--pst-color-secondary);
+}
+
+/* Improve code block styling */
+div.highlight pre {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+/* Improve note styling */
+div.admonition.note {
+  border-left-color: var(--pst-color-primary);
+}
+
+/* Improve table styling */
+table.colwidths-auto {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* Improve navigation styling */
+.bd-sidebar-primary .sidebar-primary-items__start {
+  margin-top: 1em;
+}
+
+/* Improve API documentation styling */
+dl.py.function, dl.py.class, dl.py.method, dl.py.attribute {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-left: 3px solid var(--pst-color-primary);
+  background-color: #f8f9fa;
+}
+
+dl.py.function dt, dl.py.class dt, dl.py.method dt, dl.py.attribute dt {
+  font-weight: bold;
+  color: var(--pst-color-primary);
+}
+
+/* Improve mobile responsiveness */
+@media (max-width: 768px) {
+  div.bd-sidebar-primary {
+    padding: 0.5em;
+  }
+  
+  div.bd-main {
+    padding: 0.5em;
+  }
+}
