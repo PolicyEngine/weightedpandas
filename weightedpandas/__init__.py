@@ -1,8 +1,8 @@
 from weightedpandas.core import (
-    WeightedSeries,
     WeightedDataFrame,
-    weighted_series,
+    WeightedSeries,
     weighted_dataframe,
+    weighted_series,
 )
 
 __version__ = "0.1.0"
