@@ -1,0 +1,9 @@
+jupyter-book>=0.13.0
+sphinx>=4.0
+sphinx_rtd_theme
+sphinx-autodoc-typehints
+sphinx_book_theme
+furo
+matplotlib
+numpy>=1.20.0
+pandas>=1.4.0

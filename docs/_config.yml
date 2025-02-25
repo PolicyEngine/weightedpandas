@@ -1,0 +1,32 @@
+# Book settings
+title: WeightedPandas Documentation
+author: WeightedPandas
+logo: logo.png
+copyright: "2025"
+
+# Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: "off"
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: weightedpandas.tex
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/policyengine/weightedpandas
+  path_to_book: docs
+  branch: main
+
+# Add GitHub buttons to your book
+html:
+  use_issues_button: true
+  use_repository_button: true
+  
+# Configure styling
+sphinx:
+  config:
+    html_theme: furo
+    html_static_path: ['_static']
+    html_title: WeightedPandas
