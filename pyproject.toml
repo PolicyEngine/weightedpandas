@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "weightedpandas"
-version = "0.1.0"
+version = "0.1.1"
 description = "Extends pandas Series and DataFrame classes to support weighted operations"
 readme = "README.md"
 authors = [
