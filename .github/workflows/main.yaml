@@ -57,6 +57,12 @@ jobs:
   publish-package:
     runs-on: ubuntu-latest
     needs: build-and-test
+    # PyPI trusted publishing: uploads accepted only from this workflow in the
+    # pypi environment (limited to main). No stored token.
+    environment: pypi
+    permissions:
+      contents: read
+      id-token: write
     
     steps:
       - uses: actions/checkout@v6
@@ -77,6 +83,4 @@ jobs:
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: __token__
-          password: ${{ secrets.PYPI }}
           skip-existing: true
