@@ -4,7 +4,7 @@
 
 WeightedPandas requires:
 
-- Python 3.8+
+- Python 3.11+
 - pandas 1.4.0+
 - numpy 1.20.0+
 
